@@ -66,39 +66,4 @@ public class BeanDefinition {
         constructorArgs.add(constructorArg);
     }
 
-    public static class ConstructorArg {
-        private boolean ref;
-        private Class type;
-        private Object arg;
-
-        public ConstructorArg(boolean ref, Class type, Object arg) {
-            this.ref = ref;
-            this.type = type;
-            this.arg = arg;
-        }
-
-        public boolean isRef() {
-            return ref;
-        }
-
-        public void setRef(boolean ref) {
-            this.ref = ref;
-        }
-
-        public Class getType() {
-            return type;
-        }
-
-        public void setType(Class type) {
-            this.type = type;
-        }
-
-        public Object getArg() {
-            return arg;
-        }
-
-        public void setArg(Object arg) {
-            this.arg = arg;
-        }
-    }
 }
